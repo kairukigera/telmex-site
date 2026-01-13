@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin | Contact Inquiries</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav>
+  <img src="/images/logo.png" alt="Telmex Logo" class="logo">
+  <a href="/">Home</a>
+  <a href="/admin/contacts">Admin</a>
+  <a href="/admin/logout" style="float:right;">Logout</a>
+</nav>
+
+<main>
+  <h1>Contact Inquiries</h1>
+
+  <form method="GET" action="/admin/contacts" style="margin-bottom:20px;">
+  <input type="text" name="q" placeholder="Search inquiries">
+  <button type="submit">Search</button>
+</form>
+
+  <table class="admin-table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Service</th>
+        <th>Message</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Rows will be injected here -->
+      {{rows}}
+    </tbody>
+  </table>
+  <div class="pagination">
+  <a href="?page=1">1</a>
+  <a href="?page=2">2</a>
+  <a href="?page=3">3</a>
+</div>
+
+</main>
+
+<footer>
+  <p>
+    Telmex Integrated Solutions Ltd | 5th Floor, THE ATRIUM Building, Chaka Road-Nairobi </p>
+  <p>
+    P.O.BOX 6632-00200. Nairobi, Kenya
+  </p>
+  <p>
+    Office Tel: +254 720 927 650 | Mobile: +254 728 891 255 | Email: info@telmex.co.ke
+  </p>
+  <p>
+    © 2026 Telmex Integrated Solutions Ltd.
+  </p>
+</footer>
+
+</body>
+</html>

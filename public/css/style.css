@@ -1,0 +1,294 @@
+/* ==============================
+   GLOBAL STYLES
+   ============================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #2e2e2e;
+  line-height: 1.6;
+}
+
+/* ==============================
+   NAVIGATION
+   ============================== */
+
+nav {
+  background-color: #0b3c5d;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+}
+
+nav .logo {
+  height: 45px;
+  margin-right: 30px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ==============================
+   HERO SECTION
+   ============================== */
+
+.hero {
+  background: linear-gradient(rgba(11, 60, 93, 0.85), rgba(11, 60, 93, 0.85)),
+              url("/images/hero-technology.jpg") center/cover no-repeat;
+  color: #ffffff;
+  padding: 90px 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ==============================
+   MAIN CONTENT
+   ============================== */
+
+main,
+section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  color: #0b3c5d;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: #0b3c5d;
+  margin-top: 30px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* ==============================
+   LISTS
+   ============================== */
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* ==============================
+   FORMS
+   ============================== */
+
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  max-width: 600px;
+}
+
+label {
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #0b3c5d;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #092f48;
+}
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+footer {
+  background-color: #0b3c5d;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+   ============================== */
+
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin: 8px 0;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+}
+
+/* ==============================
+   CONTACT INFO
+   ============================== */
+
+.contact-info p {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.contact-info strong {
+  color: #0b3c5d;
+}
+
+.map {
+  margin-top: 40px;
+}
+
+/* ==============================
+   ADMIN TABLE
+   ============================== */
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background-color: #ffffff;
+}
+
+.admin-table th,
+.admin-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.admin-table th {
+  background-color: #0b3c5d;
+  color: white;
+}
+
+.admin-table tr:nth-child(even) {
+  background-color: #f4f6f9;
+}
+
+.admin-table tr[style*="font-weight:bold"] {
+  background-color: #eef4fa;
+}
+
+
+/* ==============================
+   ADMIN ACTION BUTTONS
+   ============================== */
+
+.admin-table th:last-child,
+.admin-table td:last-child {
+  width: 160px;
+  text-align: center;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.action-buttons form {
+  margin: 0;
+}
+
+.btn {
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: #0b3c5d;
+  color: #ffffff;
+}
+
+.btn-danger {
+  background-color: #a83232;
+  color: #ffffff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination a {
+  margin: 0 6px;
+  padding: 6px 12px;
+  background: #0b3c5d;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
