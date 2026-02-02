@@ -71,7 +71,7 @@ router.get('/admin/contacts', requireAdmin, (req, res) => {
   const like = `%${search}%`;
 
   const sql = `
-    SELECT id, name, email, service, message, is_read, created_at
+    SELECT id, name, email, service, message, created_at, is_read
     FROM contacts
     WHERE name LIKE ? OR email LIKE ? OR message LIKE ?
     ORDER BY created_at DESC
@@ -80,7 +80,7 @@ router.get('/admin/contacts', requireAdmin, (req, res) => {
 
   db.query(sql, [like, like, like, limit, offset], (err, results) => {
     if (err) {
-      console.error(err);
+      console.error('ADMIN CONTACTS SQL ERROR:',err);
       return res.status(500).send('Database error');
     }
 
